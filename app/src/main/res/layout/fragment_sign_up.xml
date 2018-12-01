@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Sign_up">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"/>
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:textSize="44sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/mailicon"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210sp"
+        android:src="@drawable/ic_email_black_24dp" />
+    <!-- <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="230sp"
+        android:hint="email address"
+        android:layout_marginLeft="45sp"
+        android:inputType="textEmailAddress" /> -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160sp"
+        android:layout_marginLeft="12sp"
+        android:id="@+id/userlogo"
+        android:src="@drawable/ic_person_black_24dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="145sp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="User Name"
+            android:inputType="textAutoComplete"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+
+        android:layout_below="@+id/lname">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/passwordicon"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="7sp"
+        android:src="@drawable/ic_brightness_1_black_24dp" />
+
+    <!-- <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45sp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />  -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="45sp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lphone"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="45sp"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:hint="Phone No."
+            android:maxLength="10"
+
+            android:inputType="phone"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:id="@+id/phlogo"
+        android:src="@drawable/ic_call_black_24dp"
+        android:layout_marginLeft="12sp"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lphone"
+        android:text="Sign up" />
+    <!--  <ImageView
+          android:layout_width="45dp"
+          android:layout_height="40dp"
+          android:clickable="true"
+          android:id="@+id/back"
+          android:layout_marginTop="4dp"
+          android:padding="4sp"
+          android:layout_below="@+id/signup"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/ic_keyboard_backspace_black_24dp"/>  -->
+
+
+</RelativeLayout>

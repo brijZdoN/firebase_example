@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#625656"
+
+
+    tools:context="com.example.brijj.jsonexample.Home">
+   <include layout="@layout/tool_bar"
+       android:id="@+id/toolbar"
+       android:layout_height="?attr/actionBarSize"
+       android:layout_width="match_parent"/>
+    <!-- TODO: Update blank fragment layout -->
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:theme="@style/progress"
+       android:layout_centerVertical="true"
+
+       android:id="@+id/progress"
+       />
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/recycler"
+    android:layout_marginTop="4dp"
+    android:layout_below="@+id/toolbar"
+
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="55sp"
+    android:layout_height="55sp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="25sp"
+    android:id="@+id/f"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="25sp"
+    android:src="@drawable/ic_add_black_24dp"/>
+</RelativeLayout>

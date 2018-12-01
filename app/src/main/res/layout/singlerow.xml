@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+ xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pimage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="311dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/pimage"
+            android:text="Brij Jadaun"
+            android:textColor="#000"
+            android:textSize="45dp"
+            android:layout_marginEnd="22dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:id="@+id/option"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="post here "
+            android:textSize="34sp"
+            android:layout_below="@+id/pimage"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="123dp"
+            android:id="@+id/post"
+            android:src="@mipmap/ic_launcher_round" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post"
+            android:id="@+id/likes"
+            android:text="200 likes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/post"
+            android:text="23 comments" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/likes"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/like" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
